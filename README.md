@@ -230,3 +230,32 @@ Helps in early detection of security breaches or attempted attacks.
 🏗️ System Integrity: Stops attackers from exploiting the system or compromising core functionalities.
 
 🚫 Abuse Prevention: Rate limiting and monitoring help mitigate denial-of-service attacks and misuse of platform features.
+
+
+🚀 CI/CD Pipeline
+🔧 What is CI/CD?
+CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. It is a set of automated practices used in modern software development to build, test, and deploy code more frequently and reliably.
+
+Continuous Integration (CI): Automatically integrates code changes from multiple contributors into a shared repository several times a day. Each change is tested to catch bugs early.
+
+Continuous Deployment/Delivery (CD): Automatically delivers code changes to production (deployment) or staging (delivery) environments once they pass all tests.
+
+🎯 Why CI/CD is Important for This Project
+🧪 Automated Testing: Ensures all code is tested before merging or deployment, improving quality.
+
+⚡ Faster Development Cycles: Enables quick releases and updates by reducing manual steps.
+
+🛡️ Reduces Human Error: Automation ensures consistent and reliable deployments.
+
+🔍 Early Bug Detection: Helps identify and fix bugs early in the development lifecycle.
+
+🔄 Improves Collaboration: Developers can confidently contribute without breaking the main branch.
+
+🛠️ Tools We Can Use
+GitHub Actions: Automates workflows like testing, building, and deployment directly from GitHub.
+
+Docker: Containerizes the application for consistent environments across development, testing, and production.
+
+Heroku / Render / AWS / Azure: Hosting platforms that support auto-deployment from GitHub or Docker.
+
+pytest / coverage.py: For running backend tests and measuring test coverage.
