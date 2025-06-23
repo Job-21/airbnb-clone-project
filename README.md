@@ -32,3 +32,37 @@ Represents the client or end-user. Defines the product vision, prioritizes featu
 7. 🔒 DevOps Engineer
 Responsibility:
 Manages the infrastructure and deployment pipeline. Automates builds, deployments, and monitors system performance in production environments.
+
+
+
+
+⚙️ Technology Stack
+Below is a list of core technologies used in this project, along with their purpose and role in the application architecture:
+
+🐍 Django
+Purpose:
+A high-level Python web framework used to build secure, scalable, and maintainable web applications. It provides built-in features for rapid development, including authentication, routing, and ORM for database interaction.
+
+🐘 PostgreSQL
+Purpose:
+An open-source relational database system used to store and manage structured data in the project. It is known for reliability, robustness, and advanced features such as indexing and transactions.
+
+🔍 GraphQL
+Purpose:
+A query language for APIs that allows clients to request exactly the data they need. Used in this project to provide efficient and flexible API endpoints compared to traditional REST.
+
+🌐 HTML/CSS/JavaScript
+Purpose:
+Used for building the frontend user interface. HTML structures the content, CSS styles it, and JavaScript adds interactivity to the pages.
+
+⚛️ React (if applicable)
+Purpose:
+A JavaScript library used to build dynamic and responsive user interfaces. It enables the creation of reusable UI components and efficient state management on the client side.
+
+🐳 Docker
+Purpose:
+Used to containerize the application for consistent development, testing, and deployment environments. Ensures the application runs the same across different machines.
+
+🧪 Pytest / Postman / Swagger (if applicable)
+Purpose:
+Tools for testing the backend API. Pytest is used for unit tests, Postman for manual API testing, and Swagger for API documentation and interactive exploration.
