@@ -66,3 +66,105 @@ Used to containerize the application for consistent development, testing, and de
 🧪 Pytest / Postman / Swagger (if applicable)
 Purpose:
 Tools for testing the backend API. Pytest is used for unit tests, Postman for manual API testing, and Swagger for API documentation and interactive exploration.
+
+
+🗃️ Database Design
+The project is built on a relational database model with key entities representing the core functionality of the platform. Below is an overview of each entity, its main fields, and the relationships between them.
+
+1. 👤 Users
+Represents all registered users on the platform.
+
+Key Fields:
+
+id: Unique identifier for the user
+
+username: User’s login name
+
+email: User’s contact email
+
+password_hash: Encrypted password
+
+role: Indicates if the user is a guest, host, or admin
+
+2. 🏠 Properties
+Represents listings available for booking.
+
+Key Fields:
+
+id: Unique identifier for the property
+
+title: Name of the property
+
+description: Detailed description
+
+location: Address or city of the property
+
+owner_id: Foreign key referencing the Users table
+
+Relationship:
+A user (host) can have multiple properties.
+
+3. 📅 Bookings
+Captures reservations made by users.
+
+Key Fields:
+
+id: Unique identifier for the booking
+
+user_id: Foreign key referencing the Users table
+
+property_id: Foreign key referencing the Properties table
+
+check_in: Start date of the stay
+
+check_out: End date of the stay
+
+Relationship:
+A booking belongs to one user and one property.
+
+4. 📝 Reviews
+Stores feedback submitted by users after a stay.
+
+Key Fields:
+
+id: Unique identifier for the review
+
+user_id: Foreign key referencing the Users table
+
+property_id: Foreign key referencing the Properties table
+
+rating: Numeric rating score
+
+comment: Textual feedback
+
+Relationship:
+A user can leave multiple reviews, each for a specific property.
+
+5. 💳 Payments
+Handles payment transactions for bookings.
+
+Key Fields:
+
+id: Unique identifier for the payment
+
+booking_id: Foreign key referencing the Bookings table
+
+amount: Total cost of the booking
+
+payment_method: Type of payment (e.g., card, mobile money)
+
+payment_status: Status (e.g., paid, pending, failed)
+
+Relationship:
+Each payment is tied to one booking.
+
+🔗 Entity Relationships Summary
+A User can own multiple Properties.
+
+A User can make multiple Bookings.
+
+A Booking is linked to one Property and one User.
+
+A User can leave Reviews on multiple Properties.
+
+Each Booking has one Payment.
