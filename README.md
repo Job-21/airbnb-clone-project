@@ -168,3 +168,65 @@ A Booking is linked to one Property and one User.
 A User can leave Reviews on multiple Properties.
 
 Each Booking has one Payment.
+
+
+🔐 API Security
+Securing our backend APIs is a top priority to protect user data, prevent misuse, and ensure safe transactions. Below are the key security measures implemented in this project and why they are essential.
+
+1. Authentication
+What it does:
+Ensures that only registered users can access protected endpoints by validating user credentials via secure tokens (e.g., JWT).
+
+Why it’s important:
+Prevents unauthorized access to user accounts and sensitive data.
+
+2. Authorization
+What it does:
+Controls what authenticated users can do—e.g., only property owners can edit or delete their listings.
+
+Why it’s important:
+Protects resources from being accessed or modified by users without the right permissions.
+
+3. Rate Limiting
+What it does:
+Restricts the number of API requests a user or IP address can make in a given time window.
+
+Why it’s important:
+Prevents abuse such as brute force attacks and API spamming.
+
+4. Data Validation & Sanitization
+What it does:
+Checks all incoming request data for correctness and removes potentially harmful input.
+
+Why it’s important:
+Prevents injection attacks (e.g., SQL injection, XSS) that could compromise system integrity.
+
+5. HTTPS Encryption
+What it does:
+Ensures all data transmitted between client and server is encrypted using SSL/TLS.
+
+Why it’s important:
+Protects sensitive data (e.g., login credentials, payment info) from being intercepted over the network.
+
+6. Secure Payment Processing
+What it does:
+Integrates secure third-party payment gateways (e.g., Stripe, PayPal) with strong encryption and tokenization.
+
+Why it’s important:
+Ensures users’ financial details are handled safely and not stored insecurely.
+
+7. Logging and Monitoring
+What it does:
+Tracks API access and system events for unusual or suspicious activity.
+
+Why it’s important:
+Helps in early detection of security breaches or attempted attacks.
+
+🧩 Why Security Matters
+🛡️ User Data Protection: Secure handling of personal data builds user trust and complies with data protection regulations.
+
+💰 Payment Security: Prevents financial fraud and protects both users and platform owners.
+
+🏗️ System Integrity: Stops attackers from exploiting the system or compromising core functionalities.
+
+🚫 Abuse Prevention: Rate limiting and monitoring help mitigate denial-of-service attacks and misuse of platform features.
